@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Currency Calculator</h1>
+    </header>
+
+    <main>
+        <section class="converter-panel">
+            <h2>USD to PAK</h2>
+            <input type="number" id="Amount" placeholder="Enter USD">
+            <select id="selectedOption" onchange="ChangeTitle()">
+                <option name="USD">USD to PAK</option>
+                <option name="PAK">PAK to USD</option>
+                <option name="PAK">INR to PAK</option>
+                <option name="PAK">PAK to INR</option>
+            </select>
+            <p id="text">PAK:</p>
+            <button onclick="ConvertCurrency()">Convert</button>
+        </section>
+        
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

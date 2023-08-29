@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* White background */
+    color: #0D47A1; /* Deep blue text */
+}
+
+/* Header styling */
+header {
+    background-color: #0D47A1; /* Deep blue header */
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Converter panel styling */
+.converter-panel {
+    background-color: #BBDEFB; /* Light blue panel background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.converter-panel h2 {
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.converter-panel input[type="number"],
+.converter-panel select,
+.converter-panel button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.converter-panel button {
+    background-color: #0D47A1; /* Deep blue button color */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.results {
+    background-color: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.results h2 {
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.results p {
+    color: #1976D2; /* Light blue text */
+    margin-bottom: 5px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .converter-panel,
+    .results {
+        width: 80%;
+    }
+}
